@@ -1,0 +1,80 @@
+.hero-section{
+    margin: 0 3rem;
+    margin-top: 4rem;
+}
+.hero-text-con{
+    margin-top: 4rem;
+}
+.hero-text-con > h1{
+    font-size: 2.5rem;
+    color: white;
+}
+.hero-btn-con{
+    margin-top: 1rem;
+}
+.hero-btn-con button{
+    background-color: green;
+    color: white;
+    width: 7rem;
+    padding: 0.5rem 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.hero-bg-con{
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.pexels.com/photos/7679446/pexels-photo-7679446.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: cover;
+    object-fit: fill;
+    border-radius: 1rem;
+    padding: 2rem;
+    
+}
+@media (max-width:859px) {
+    .hero-section{
+        margin: 0 2rem;
+        margin-top: 4rem;
+    }
+}
+@media (max-width:695px) {
+    .hero-text-con{
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width:663px) {
+    .hero-text-con{
+        margin-top: 1rem;
+    }
+    .hero-bg-con{
+        padding: 1rem;
+    }
+}
+@media (max-width:475px) {
+    .hero-bg-con{
+        padding: 0.5rem;
+    }
+}
+@media (max-width:443px) {
+    .hero-text-con > h1{
+        font-size: 2.3rem;
+        
+    }
+}
+@media (max-width:349px) {
+    .hero-section{
+        margin: 0 1.5rem;
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width:317px) {
+    .hero-text-con > h1{
+        font-size: 2.1rem;
+        
+    }
+}

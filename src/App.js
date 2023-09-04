@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
 
+import { Route, Routes, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+import Home from './Components/Home';
+import CheckOut from './Components/CheckOut';
+import ItemDetails from './Components/ItemDetails';
+import Confirmation from './Components/Confirmation';
+import Navigation from './Components/Navigation';
+import DemoCartMenu from './Components/DemoCartMenu';
+
+
+import { CartProvider } from './Components/Context';
+
+// const scrollToTop = ()=>{
+//   const {pathName}= useLocation();
+//   useEffect(()=>{
+//     window.scrollTo(0,0);
+//   }, [pathName])
+//   return null
+// }
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CartProvider>
+      <scrollToTop />
+      <Navigation/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        {/* <Route path="/" element={<DemoCartMenu/>}/> */}
+        <Route path="/checkout" element={<CheckOut/>}/>
+        {/* <Route path="item/:itemId" element={<ItemDetails/>}/> */}
+        <Route path="/ItemDetails/:productId" element={<ItemDetails  />}>
+                    
+                </Route>
+        <Route path="checkout/success" element={<Confirmation/>}/>
+      </Routes>
+      </CartProvider>
     </div>
+
   );
 }
 

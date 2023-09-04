@@ -1,0 +1,41 @@
+.form-section{
+    text-align: center;
+    display: grid;
+    place-content: center;
+    margin-top: 6rem;
+}
+form{
+    margin-top: 1rem;
+}
+form input{
+    width: 20rem;
+    padding: 0.4rem 0.3rem;
+    caret-color: green;
+    border-radius: 15px;
+    border: 1px solid rgb(172, 168, 168);
+}
+form input:focus{
+    outline: none;
+}
+form button{
+    padding: 0.4rem 0.1rem;
+    margin-left: 1rem;
+    border-radius: 20px;
+    width: 6rem;
+    background-color:green;
+    border: none;
+    color: white;
+}
+@media (max-width:443px) {
+    form input{
+        width: 15rem;
+        
+    }
+}
+
+@media (max-width:359px) {
+    form input{
+        width: 12rem;
+        
+    }
+}

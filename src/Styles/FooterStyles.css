@@ -1,0 +1,27 @@
+footer{
+    background-color: black;
+    color: white;
+    margin-top: 6rem;
+}
+footer a{
+    color: white;
+}
+
+.footer-con{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 10rem;
+    padding: 3rem;
+}
+@media (max-width:521px) {
+    .footer-con{
+        gap: 5rem;
+    }
+}
+
+@media (max-width:357px) {
+    .footer-con{
+        gap: 3rem;
+    }
+}
